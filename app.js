@@ -14,11 +14,11 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-app.use('/api', require('./src/routes/users.routes'));
-app.use('/api', require('./src/routes/auth.routes'));
-app.use('/api', require('./src/routes/product.routes'));
-app.use('/api', require('./src/routes/admin.routes'));
-app.use('/api', require('./src/routes/payment.routes'));
-app.use('/api', require('./src/routes/orders.routes'));
+app.use('/api', require('./app/routes/users.routes'));
+app.use('/api', require('./app/routes/auth.routes'));
+app.use('/api', require('./app/routes/product.routes'));
+app.use('/api', require('./app/routes/admin.routes'));
+app.use('/api', require('./app/routes/payment.routes'));
+app.use('/api', require('./app/routes/orders.routes'));
 
 module.exports = app;
